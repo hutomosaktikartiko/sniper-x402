@@ -1,0 +1,2 @@
+[workspace]
+members = ["apps/sniper-bot", "crates/bot", "crates/core"]
