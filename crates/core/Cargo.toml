@@ -5,17 +5,32 @@ edition = "2024"
 
 [dependencies]
 tokio = { workspace = true }
+reqwest = { workspace = true }
+reqwest-middleware = { workspace = true }
+axum = { workspace = true }
 solana-client = { workspace = true }
 solana-sdk = { workspace = true }
 solana-program = { workspace = true }
 x402-rs = { workspace = true }
+x402-reqwest = { workspace = true }
+x402-axum = { workspace = true }
 sled = { workspace = true }
 serde = { workspace = true }
+serde_json = { workspace = true }
 bincode = { workspace = true }
 thiserror = { workspace = true }
 uuid = { workspace = true }
 chrono = { workspace = true }
+anyhow = { workspace = true }
 
 [[example]]
 name = "db_test"
 path = "examples/db_test.rs"
+
+[[example]]
+name = "x402_client_test"
+path = "examples/x402_client_test.rs"
+
+[[example]]
+name = "x402_server"
+path = "examples/x402_server.rs"
